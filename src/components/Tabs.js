@@ -123,12 +123,55 @@ export default function LabTabs() {
         </TabPanel>
         <TabPanel value="2">
           <div>
-            <h1>Time Zone</h1>
-          <input
+            
+            <div className="flex">
+              <div className="p-2">
+                <h1 className="font-[16px] pb-2 pt-2">Skills</h1>
+                <input
                   className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
-                  placeholder="Link to Social Account"
+                  placeholder="Enter your skills"
+                />
+                <h1 className="font-[16px] pb-2 pt-20">Preceding</h1>
+                <input
+                  className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
+                  placeholder="School/College/CompanyName"
+                />
+          
+              </div>
+
+              <div className="p-2">
+              <h1 className="font-[16px] pb-2 pt-2">Years of Experience</h1>
+              <select
+                  className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px] cursor-pointer"
+                  placeholder="Select Years"
+                  id="Experience"
+                  name="Experience"
+                >
+                  <option className="text-[#FAFBFC]" value="">
+                    Select your option
+                  </option>
+                  <option value="volvo">0 - 1 years</option>
+                  <option value="saab">2 - 5 years</option>
+                  <option value="fiat">more than 5 years</option>
+                  <option value="audi">more than 10 years</option>
+                </select>
+              <h1 className="font-[16px] pb-2 pt-20">Existing</h1>
+                <input
+                  className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
+                  placeholder="School/College/CompanyName"
                 />
              
+             
+              </div>
+              
+            </div>
+
+            <div className="flex p-2 pt-20">
+              <button className="text-white bg-black p-3 px-5 text-[14px]  rounded-md hover:bg-gray-500">
+                Save changes
+              </button>
+             
+            </div>
           </div>
         </TabPanel>
         <TabPanel value="3">Item Three</TabPanel>
